@@ -14,6 +14,30 @@
   color: #DDC3A5;
 }
 
+.color-charcoal {
+  color: #3C4048
+}
+
+.color-grey {
+  color: #B2B2B2
+}
+
+.color-ivory {
+  color: #EAEAEA;
+}
+
+.color-teal {
+  color: #00ABB3;
+}
+
+.color-bg-teal {
+  background: #00ABB3;
+}
+
+.h1 {
+  font-family: 'Secular One';
+}
+
 .page-not-found {
   min-height: 100vh;
   display: flex;
@@ -32,5 +56,45 @@
 }
 
 .menu-bar {
-  font-family: 'Secular One';
+  width: 80vw;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  height: 0;
+  overflow: hidden;
+  max-height: 100vh;
+  z-index: 9;
+  transform: translateY(-100vh);
+  transition: all ease-in-out 1s;
+}
+
+.menu-nav.show-menu-nav {
+  height: 100%;
+  transform: translateY(0px);
+}
+
+.menu-nav-list {
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.menu-icon {
+  z-index: 10;
 }

@@ -1,5 +1,7 @@
 {
-    "light": "color-beige", 
-    "medium": "color-tan", 
-    "dark": "color-black-brown"
+    "light": "color-ivory", 
+    "medium": "color-grey", 
+    "dark": "color-charcoal", 
+    "accent": "color-teal", 
+    "bg_accent": "color-bg-teal"
 }
