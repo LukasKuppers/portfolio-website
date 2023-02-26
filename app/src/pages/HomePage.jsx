@@ -1,9 +1,11 @@
 import React from 'react';
+import MenuBar from '../components/MenuBar';
+const colors = require('../colors.json');
 
 const HomePage = () => {
     return (
         <div className='page-home'>
-            <h1>HOME</h1>
+            <MenuBar fontColor={colors.light}/>
         </div>
     );
 };

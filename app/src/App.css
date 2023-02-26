@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.color-black-brown {
+  color: #201E20;
+}
+
+.color-tan {
+  color: #E0A96D;
+}
+
+.color-beige {
+  color: #DDC3A5;
+}
+
 .page-not-found {
   min-height: 100vh;
   display: flex;
@@ -16,6 +28,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: beige;
+  background-color: #201E20;
+}
+
+.menu-bar {
+  font-family: 'Secular One';
 }
