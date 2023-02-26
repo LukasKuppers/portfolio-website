@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+
+.page-not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+
+.page-home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
