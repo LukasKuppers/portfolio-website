@@ -13,7 +13,7 @@ const MenuBar = ({ fontColor }) => {
             <h1 className={fontColor}>LUKAS K.</h1>
             <FontAwesomeIcon 
                 icon={solid("angles-down")}
-                className={`menu-icon ${navOpen ? ' fa-rotate-180': ''} ${fontColor}`} size="xl"
+                className={`menu-icon ${navOpen ? ' fa-rotate-180': ''} ${fontColor}`} size="2xl"
                 onClick={() => setNavOpen(!navOpen)} />
             <div className={`menu-nav${navOpen ? ' show-menu-nav' : ''} ${colors.bg_accent}`}>
                 <ul className='menu-nav-list'>
