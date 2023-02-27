@@ -20,10 +20,10 @@ const MenuBar = ({ fontColor }) => {
                     onClick={() => setNavOpen(!navOpen)} />
             </div>
             <div className={`menu-nav${navOpen ? ' show-menu-nav' : ''} ${colors.bg_accent}`}>
-                <ul className='menu-nav-list'>
-                    <li><a className="nav-link" href="home">HOME</a></li>
-                    <li><a className="nav-link" href="blah">BLAH</a></li>
-                </ul>
+                <div className='menu-nav-list'>
+                    <a className="nav-link" href="home">&gt; HOME</a>
+                    <a className="nav-link" href="blah">&gt; BLAH</a>
+                </div>
             </div>
         </div>
     );
