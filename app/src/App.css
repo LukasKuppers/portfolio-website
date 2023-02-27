@@ -34,8 +34,13 @@
   background: #00ABB3;
 }
 
-.h1 {
-  font-family: 'Secular One';
+h1 {
+  font-family: 'Work Sans';
+}
+
+p {
+  font-family: 'Merriweather';
+  font-size: 25px;
 }
 
 .page-not-found {
@@ -63,8 +68,22 @@
   align-items: start;
 }
 
+.home-intro-section h1 {
+  font-size: max(6vw, 50px);
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .home-intro-section span {
   font-family: 'JetBrains Mono';
+  font-size: 25px;
+}
+
+.home-intro-section p {
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .menu-bar {

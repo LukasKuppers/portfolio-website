@@ -11,7 +11,7 @@ const MenuBar = ({ fontColor }) => {
     return (
         <div className="menu-bar">
             <div className="menu-content">
-                <h1 className={fontColor}>LUKAS K.</h1>
+                <h1 className={fontColor}>LUKAS_K.</h1>
                 <FontAwesomeIcon 
                     icon={solid("angles-down")}
                     className={`menu-icon ${navOpen ? ' fa-rotate-180': ''} ${fontColor}`} size="2xl"

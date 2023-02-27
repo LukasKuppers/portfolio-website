@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuBar from '../components/MenuBar';
 const colors = require('../colors.json');
+const text = require('../textChunks.json');
 
 const HomePage = () => {
     return (
@@ -8,7 +9,9 @@ const HomePage = () => {
             <MenuBar fontColor={colors.light}/>
             <div className='home-intro-section'>
                 <span className={colors.accent}>Hi, I'm</span>
-                <h1 className={colors.medium}>Lukas Kuppers</h1>
+                <h1 className={colors.light}>Lukas Kuppers</h1>
+                <p className={colors.medium}>{text.professionalIntro}</p>
+                <p className={colors.medium}>{text.personalIntro}</p>
             </div>
         </div>
     );
