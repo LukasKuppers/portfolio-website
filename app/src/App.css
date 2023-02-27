@@ -97,4 +97,9 @@
 
 .menu-icon {
   z-index: 10;
+  transition: all ease-in-out 1s;
+}
+
+.menu-icon.close-nav {
+  transform: rotate(180);
 }
