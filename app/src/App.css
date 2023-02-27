@@ -107,6 +107,8 @@ p {
 }
 
 .menu-nav {
+  backdrop-filter: blur(50px);
+  border-bottom: 3px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +135,6 @@ p {
 }
 
 .nav-link {
-  color: white;
   text-decoration: none;
   font-size: xx-large;
   font-family: 'JetBrains Mono';
@@ -141,6 +142,7 @@ p {
 
 .menu-icon {
   z-index: 10;
+  cursor: pointer;
   transition: all ease-in-out 1s;
 }
 

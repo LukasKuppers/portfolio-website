@@ -19,10 +19,10 @@ const MenuBar = ({ fontColor }) => {
                     className={`menu-icon ${navOpen ? ' fa-rotate-180': ''} ${fontColor}`} size="2xl"
                     onClick={() => setNavOpen(!navOpen)} />
             </div>
-            <div className={`menu-nav${navOpen ? ' show-menu-nav' : ''} ${colors.bg_accent}`}>
+            <div className={`menu-nav${navOpen ? ' show-menu-nav' : ''}`}>
                 <div className='menu-nav-list'>
-                    <a className="nav-link" href="home">&gt; HOME</a>
-                    <a className="nav-link" href="blah">&gt; BLAH</a>
+                    <a className={`nav-link ${fontColor}`} href="home">&gt; HOME</a>
+                    <a className={`nav-link ${fontColor}`} href="blah">&gt; BLAH</a>
                 </div>
             </div>
         </div>
