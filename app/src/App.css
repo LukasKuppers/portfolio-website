@@ -40,7 +40,7 @@ h1 {
 
 p {
   font-family: 'Merriweather';
-  font-size: 25px;
+  font-size: min(25px, 5vw);
 }
 
 .page-not-found {
@@ -77,7 +77,7 @@ p {
 
 .home-intro-section span {
   font-family: 'JetBrains Mono';
-  font-size: 25px;
+  font-size: min(25px, 5vw);
 }
 
 .home-intro-section p {
