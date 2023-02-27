@@ -54,16 +54,37 @@
   background-color: #201E20;
 }
 
+.home-intro-section {
+  display: flex;
+  height: 100vh;
+  width: 70vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.home-intro-section span {
+  font-family: 'JetBrains Mono';
+}
+
 .menu-bar {
-  width: 80vw;
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-bar h1 {
   font-size: 50px
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
 }
 
 .menu-nav {
@@ -75,16 +96,14 @@
   left: 0;
   right: 0;
   margin-top: 0;
-  height: 0;
+  height: 100vh;
   overflow: hidden;
-  max-height: 100vh;
   z-index: 9;
   transform: translateY(-100vh);
   transition: all ease-in-out 1s;
 }
 
 .menu-nav.show-menu-nav {
-  height: 100%;
   transform: translateY(0px);
 }
 
