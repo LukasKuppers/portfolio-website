@@ -1,11 +1,19 @@
 import MenuBar from "../components/MenuBar";
+import SocialsMenu from "../components/SocailsMenu";
 const colors = require('../colors.json');
 
 const NotFoundPage = () => {
     return (
         <div className="page-not-found">
-            <MenuBar fontColor={colors.dark}/>
-            <h1>Page Doesn't Exist!</h1>
+            <MenuBar fontColor={colors.dark} />
+            <SocialsMenu color={colors.dark} />
+            <div className="page-not-found-content">
+                <h1 className={colors.dark}>404</h1>
+                <span>The Page Doesn't Exist!</span>
+                <a href="home" className={`page-not-found-link ${colors.light} ${colors.bg_accent}`}>
+                    <span>&gt; Go Home</span>
+                </a>
+            </div>
         </div>
     )
 }
