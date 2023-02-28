@@ -34,6 +34,10 @@
   background: #00ABB3;
 }
 
+.color-outline-ivory {
+  border-color: #EAEAEA;
+}
+
 h1 {
   font-family: 'Work Sans';
 }
@@ -90,7 +94,8 @@ p {
 
 .home-intro-section {
   display: flex;
-  height: 100vh;
+  margin-top: 30vh;
+  margin-bottom: 5vh;
   width: 70vw;
   flex-direction: column;
   justify-content: center;
@@ -113,6 +118,24 @@ p {
   text-align: start;
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.home-link-container {
+  margin-top: 4em;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-cta-link {
+  font-family: 'JetBrains Mono';
+  text-decoration: none;
+  margin-right: 4em;
+  margin-top: 1em;
+  border: solid;
+  padding: 20px;
+  font-size: larger;
+  size: fit-content;
 }
 
 .menu-bar {
@@ -160,7 +183,7 @@ p {
 .menu-nav-list {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 .nav-link {

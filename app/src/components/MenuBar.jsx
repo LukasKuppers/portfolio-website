@@ -20,6 +20,8 @@ const MenuBar = ({ fontColor }) => {
             <div className={`menu-nav${navOpen ? ' show-menu-nav' : ''}`}>
                 <div className='menu-nav-list'>
                     <a className={`nav-link ${fontColor}`} href="home">&gt; HOME</a>
+                    <a className={`nav-link ${fontColor}`} href="software-projects">&gt; SOFTWARE DEV</a>
+                    <a className={`nav-link ${fontColor}`} href="art">&gt; ART</a>
                 </div>
             </div>
         </div>

@@ -14,6 +14,12 @@ const HomePage = () => {
                 <h1 className={colors.light}>Lukas Kuppers</h1>
                 <p className={colors.medium}>{text.professionalIntro}</p>
                 <p className={colors.medium}>{text.personalIntro}</p>
+                <div className='home-link-container'>
+                    <a className={`home-cta-link ${colors.light} ${colors.outline_light}`}
+                        href='software-projects'>&gt; SOFTWARE DEVELOPMENT</a>
+                    <a className={`home-cta-link ${colors.light} ${colors.outline_light}`}
+                        href='art'>&gt; ART</a>
+                </div>
             </div>
         </div>
     );
