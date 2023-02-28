@@ -149,3 +149,16 @@ p {
 .menu-icon.close-nav {
   transform: rotate(180);
 }
+
+.socials-menu {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socials-icon {
+  cursor: pointer 
+}

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
-const colors = require('../colors.json');
-
 const MenuBar = ({ fontColor }) => {
 
     const [navOpen, setNavOpen] = useState(false);
