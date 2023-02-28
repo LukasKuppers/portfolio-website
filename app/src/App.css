@@ -38,6 +38,10 @@
   border-color: #EAEAEA;
 }
 
+.color-outline-charcoal {
+  border-color: #3C4048;
+}
+
 h1 {
   font-family: 'Work Sans';
 }
@@ -73,15 +77,17 @@ p {
 .page-not-found-content span {
   margin: 0;
   font-size: min(25px, 5vw);
+  font-family: 'Merriweather';
 }
 
 .page-not-found-link {
-  border-radius: 10px;
+  border: solid;
   text-decoration: none;
   font-family: 'JetBrains Mono';
   width: fit-content;
-  padding: 5px;
-  margin: 10px;
+  font-size: larger;
+  padding: 20px;
+  margin: 20px;
 }
 
 .page-home {

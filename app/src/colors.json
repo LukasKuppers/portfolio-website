@@ -4,5 +4,6 @@
     "dark": "color-charcoal", 
     "accent": "color-teal", 
     "bg_accent": "color-bg-teal", 
-    "outline_light": "color-outline-ivory"
+    "outline_light": "color-outline-ivory", 
+    "outline_dark": "color-outline-charcoal"
 }
