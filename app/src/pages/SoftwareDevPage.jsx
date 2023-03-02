@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
 import SocialsMenu from '../components/SocailsMenu';
-import DynamicData from '../util/DynamicData';
+import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 
 const colors = require('../colors.json');
 const text = require('../textChunks.json');
+
+const PROJECTS_SHEET_ID = 'technical-projects';
 
 const SoftwareDevPage = () => {
 
@@ -12,7 +14,7 @@ const SoftwareDevPage = () => {
 
     useEffect(() => {
         const fetchRows = async () => {
-            const rows = await DynamicData.getTechnicalProjectsData();
+            const rows = await getSpreadsheetDataAsJson(PROJECTS_SHEET_ID);
             setFetchedRows(rows);
         };
         fetchRows();
@@ -24,7 +26,7 @@ const SoftwareDevPage = () => {
             <SocialsMenu color={colors.light} />
             <div className='dev-intro-section'>
                 <h1 className={colors.light}>Technical Projects</h1>
-                {fetchedRows}
+                {JSON.stringify(fetchedRows)}
             </div>
         </div>
     );
