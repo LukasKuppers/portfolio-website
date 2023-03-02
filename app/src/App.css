@@ -144,20 +144,43 @@ p {
   size: fit-content;
 }
 
-.dev-intro-section {
+.dev-body {
   display: flex;
-  margin-top: 30vh;
+  margin-top: 15vh;
   margin-bottom: 5vh;
   width: 70vw;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  text-align: start;
 }
 
-.dev-intro-section h1 {
+.dev-body h1 {
   font-size: max(6vw, 50px);
   text-align: start;
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.dev-xp-container {
+  border: solid;
+  border-color: #EAEAEA;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.dev-xp-container h1 {
+  font-size: max(2vw, 25px);
+  margin-bottom: 0.5rem;
+}
+
+.dev-xp-container span {
+  font-family: 'JetBrains Mono';
+}
+
+.dev-xp-container p {
+  margin-top: 0.5rem;
   margin-bottom: 0;
 }
 

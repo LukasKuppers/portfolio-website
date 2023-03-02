@@ -1,32 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
 import SocialsMenu from '../components/SocailsMenu';
+import DevXpContainer from '../components/DevXpContainer';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 
 const colors = require('../colors.json');
 const text = require('../textChunks.json');
 
+const EXPERIENCE_SHEET_ID = 'technical-experience';
 const PROJECTS_SHEET_ID = 'technical-projects';
 
 const SoftwareDevPage = () => {
 
-    const [fetchedRows, setFetchedRows] = useState([]);
+    const [experienceData, setexperienceData] = useState([]);
+    const [projectsData, setProjectsData] = useState([]);
 
     useEffect(() => {
-        const fetchRows = async () => {
-            const rows = await getSpreadsheetDataAsJson(PROJECTS_SHEET_ID);
-            setFetchedRows(rows);
+        const fetchData = async () => {
+            const fetchedExperienceData = await getSpreadsheetDataAsJson(EXPERIENCE_SHEET_ID);
+            const fetchedProjectsData = await getSpreadsheetDataAsJson(PROJECTS_SHEET_ID);
+            setexperienceData(fetchedExperienceData);
+            setProjectsData(fetchedProjectsData);
         };
-        fetchRows();
+        fetchData();
     }, []);
 
     return (
         <div className='page-home'>
             <MenuBar fontColor={colors.light} />
             <SocialsMenu color={colors.light} />
-            <div className='dev-intro-section'>
+            <div className='dev-body'>
+                <h1 className={colors.light}>Industry Experience</h1>
+                <div>
+                    {experienceData.map(xp => <DevXpContainer key={xp.company} xpData={xp} />)}
+                </div>
                 <h1 className={colors.light}>Technical Projects</h1>
-                {JSON.stringify(fetchedRows)}
             </div>
         </div>
     );
