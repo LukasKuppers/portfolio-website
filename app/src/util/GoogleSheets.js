@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const SHEETS_API_ENDPOINT = 'https://sheets.googleapis.com';
 const SPREADSHEET_ID = '1-WimflwtcXox3iJqiP9lOMXap2r-Gw9iemmZA26XGIg';
-const API_KEY = 'AIzaSyCXkA23LzBdx5ywUObyg0nAo9MpX-UziYI';
 
 const getSpreadsheetRows = async (range) => {
     const requestString = generateValuesGetRequestString(range);
