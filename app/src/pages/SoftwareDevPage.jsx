@@ -52,7 +52,7 @@ const SoftwareDevPage = () => {
                 </div>
                 <h1 className={colors.light}>Technical Projects</h1>
                 <div>
-                    {JSON.stringify(projectsData)}
+                    {projectsData.map(proj => <img src={proj.image} />)}
                 </div>
             </div>
         </div>
