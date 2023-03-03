@@ -51,6 +51,16 @@ p {
   font-size: min(25px, 5vw);
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-not-found {
   min-height: 100vh;
   display: flex;
@@ -166,8 +176,10 @@ p {
   border: solid;
   border-color: #EAEAEA;
   border-radius: 1rem;
-  margin: 1.5rem 0;
+  margin: 1rem;
   padding: 1rem;
+  flex-basis: 0;
+  flex: 1 1 0px;
 }
 
 .dev-xp-container h1 {
