@@ -51,6 +51,9 @@ const SoftwareDevPage = () => {
                     {experienceData.map(xp => <DevXpContainer key={xp.company} xpData={xp} />)}
                 </div>
                 <h1 className={colors.light}>Technical Projects</h1>
+                <div>
+                    {JSON.stringify(projectsData)}
+                </div>
             </div>
         </div>
     );
