@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .color-black-brown {
   color: #201E20;
 }
@@ -54,6 +58,8 @@ p {
 .flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-col {
@@ -194,6 +200,27 @@ p {
 
 .dev-xp-container p {
   margin-top: 1rem;
+}
+
+.project-card {
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  height: 25rem;
+}
+
+.project-card-content {
+  backdrop-filter: blur(20px);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.project-card h1 {
+  font-size: max(2vw, 25px);
+}
+
+.project-card span {
+  font-family: 'JetBrains Mono';
 }
 
 .menu-bar {
