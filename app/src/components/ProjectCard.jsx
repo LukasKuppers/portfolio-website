@@ -16,6 +16,7 @@ const ProjectCard = ({ project, smallScreen }) => {
         return {
             backgroundImage: `url(${project.image})`, 
             backgroundSize: 'cover', 
+            backgroundPosition: 'center', 
             width: `${width}%`
         };
     };
@@ -26,7 +27,7 @@ const ProjectCard = ({ project, smallScreen }) => {
 
     return (
         <div className='project-card' style={customStyle()}>
-            <div className={`${mouseHover ? '' : 'hidden'} project-card-content`}
+            <div className={`${mouseHover && !window.navOpen ? '' : 'hidden'} project-card-content`}
                 onMouseEnter={() => setMouseHover(true)}
                 onMouseLeave={() => setMouseHover(false)}>
                 <h1 className={getTextColor()}>{project.title}</h1>

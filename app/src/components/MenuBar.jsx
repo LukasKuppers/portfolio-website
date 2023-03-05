@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const MenuBar = ({ fontColor }) => {
 
     const [navOpen, setNavOpen] = useState(false);
+
+    useEffect(() => {
+        window.navOpen = navOpen;
+    }, [navOpen]);
 
     return (
         <div className="menu-bar">
