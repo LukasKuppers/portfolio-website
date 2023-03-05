@@ -210,9 +210,22 @@ p {
 }
 
 .project-card-content {
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   padding: 1rem;
   border-radius: 1rem;
+}
+
+.project-card-util-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}
+
+.project-card-util-bar a {
+  text-decoration: none;
+  font-family: 'JetBrains Mono';
 }
 
 .project-card h1 {
@@ -221,6 +234,10 @@ p {
 
 .project-card span {
   font-family: 'JetBrains Mono';
+}
+
+.project-card p {
+  font-size: large;
 }
 
 .menu-bar {

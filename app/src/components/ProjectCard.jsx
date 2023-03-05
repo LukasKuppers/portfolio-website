@@ -31,7 +31,11 @@ const ProjectCard = ({ project, smallScreen }) => {
                 onMouseEnter={() => setMouseHover(true)}
                 onMouseLeave={() => setMouseHover(false)}>
                 <h1 className={getTextColor()}>{project.title}</h1>
-                <span className={colors.accent}>{project.date}</span>
+                <div className='project-card-util-bar'>
+                    <span className={colors.accent}>{project.date}</span>
+                    {project.githubLink ? <a href={project.githubLink} className={colors.accent}>&gt; GITHUB</a> : ''}
+                    {project.liveLink ? <a href={project.liveLink} className={colors.accent}>&gt; LIVE SITE</a> : ''}
+                </div>
                 <p className={getTextColor()}>{project.description}</p>
             </div>
         </div>
