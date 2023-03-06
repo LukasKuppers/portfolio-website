@@ -42,6 +42,10 @@
   background: #201E20;
 }
 
+.color-bg-ivory {
+  background: #EAEAEA;
+}
+
 .color-bg-teal {
   background: #00ABB3;
 }
@@ -112,6 +116,27 @@ p {
   font-size: larger;
   padding: 20px;
   margin: 20px;
+}
+
+.page-contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+
+.contact-body {
+  margin-top: 30vh;
+  margin-bottom: 5vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-body h1 {
+  font-size: max(6vw, 50px);
 }
 
 .page-home {
