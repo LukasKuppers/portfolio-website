@@ -49,7 +49,7 @@ const SoftwareDevPage = () => {
 
     return (
         <div className='page-home'>
-            <MenuBar fontColor={colors.light} />
+            <MenuBar fontColor={colors.light} bgColor={colors.bg_dark} />
             <SocialsMenu color={colors.light} />
             <div className='dev-body'>
                 <h1 className={colors.light}>Industry Experience</h1>

@@ -3,6 +3,7 @@
     "medium": "color-grey", 
     "dark": "color-charcoal", 
     "accent": "color-teal", 
+    "bg_dark": "color-bg-black-brown", 
     "bg_accent": "color-bg-teal", 
     "outline_light": "color-outline-ivory", 
     "outline_dark": "color-outline-charcoal"

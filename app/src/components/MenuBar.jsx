@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
-const MenuBar = ({ fontColor }) => {
+const MenuBar = ({ fontColor, bgColor }) => {
 
     const [navOpen, setNavOpen] = useState(false);
 
@@ -11,7 +11,7 @@ const MenuBar = ({ fontColor }) => {
     }, [navOpen]);
 
     return (
-        <div className="menu-bar">
+        <div className={`menu-bar${bgColor && bgColor != '' ? ' ' + bgColor : ''}`}>
             <div className="menu-content">
                 <a href="home" className="nav-link">
                     <h1 className={fontColor}>LUKAS_K.</h1>
