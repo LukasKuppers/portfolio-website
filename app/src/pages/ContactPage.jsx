@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
 import SocialsMenu from '../components/SocailsMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 const colors = require('../colors.json');
 const text = require('../textChunks.json');
 
+const MISC_SPREADSHEET_ID = 'misc-info';
+
 const ContactPage = () => {
+
+    const [email, setEmail] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const miscData = await getSpreadsheetDataAsJson(MISC_SPREADSHEET_ID);
+            if (miscData && miscData.length > 0) {
+                const emailRaw = miscData[0].email;
+                setEmail(emailRaw.toUpperCase());
+            }
+        };
+        fetchData();
+    }, []);
+
     return (
         <div className='page-contact'>
             <MenuBar fontColor={colors.dark} bgColor={colors.bg_light} />
@@ -21,7 +38,7 @@ const ContactPage = () => {
                 </div>
                 <div className='contact-row'>
                     <FontAwesomeIcon icon={solid('envelope')} size='xl' className={colors.dark} />
-                    <a href='' className={colors.accent}>LKUPPERS11@GMAIL.COM</a>
+                    <a href='' className={colors.accent}>{email}</a>
                 </div>
             </div>
         </div>
