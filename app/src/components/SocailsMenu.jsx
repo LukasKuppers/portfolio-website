@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const SocialsMenu = ({ color }) => {
     return (
@@ -10,6 +10,10 @@ const SocialsMenu = ({ color }) => {
             </a>
             <a href='https://github.com/LukasKuppers'>
                 <FontAwesomeIcon icon={brands("github")} size='2xl'
+                    className={`socials-icon ${color}`} />
+            </a>
+            <a href='contact'>
+                <FontAwesomeIcon icon={solid("envelope")} size='2xl'
                     className={`socials-icon ${color}`} />
             </a>
         </div>

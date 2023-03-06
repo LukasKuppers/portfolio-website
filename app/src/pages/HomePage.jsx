@@ -19,6 +19,8 @@ const HomePage = () => {
                         href='software-projects'>&gt; SOFTWARE DEVELOPMENT</a>
                     <a className={`home-cta-link ${colors.light} ${colors.outline_light}`}
                         href='art'>&gt; ART</a>
+                    <a className={`home-cta-link ${colors.light} ${colors.outline_light}`}
+                        href='contact'>&gt; CONTACT</a>
                 </div>
             </div>
         </div>
