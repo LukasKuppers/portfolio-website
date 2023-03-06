@@ -135,8 +135,23 @@ p {
   align-items: start;
 }
 
+.contact-body p {
+  text-align: start;
+}
+
 .contact-body h1 {
   font-size: max(6vw, 50px);
+  margin-bottom: 0;
+}
+
+.contact-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-row a {
+  text-decoration: none;
+  font-family: 'JetBrains Mono';
 }
 
 .page-home {
