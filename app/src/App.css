@@ -213,6 +213,7 @@ p {
   backdrop-filter: blur(50px);
   padding: 1rem;
   border-radius: 1rem;
+  flex-grow: 1;
 }
 
 .project-card-util-bar {
