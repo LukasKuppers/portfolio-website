@@ -11,7 +11,7 @@ const UnderConstructionPage = () => {
             <MenuBar fontColor={colors.dark} />
             <SocialsMenu color={colors.dark} />
             <div className="page-not-found-content">
-                <FontAwesomeIcon icon={solid('person-digging')} size='9x' 
+                <FontAwesomeIcon icon={solid('screwdriver-wrench')} size='9x' 
                     className={`construction-icon ${colors.dark}`} />
                 <span className={colors.dark}>{text.constructionMsg}</span>
                 <a href="home" className={`page-not-found-link ${colors.dark} ${colors.outline_dark}`}>
