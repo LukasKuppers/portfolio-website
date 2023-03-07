@@ -118,6 +118,18 @@ p {
   margin: 20px;
 }
 
+.page-construction {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+
+.construction-icon {
+  margin: 3rem;
+}
+
 .page-contact {
   min-height: 100vh;
   display: flex;
