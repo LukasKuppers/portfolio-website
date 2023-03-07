@@ -12,7 +12,7 @@ const EXPERIENCE_SHEET_ID = 'technical-experience';
 const PROJECTS_SHEET_ID = 'technical-projects';
 
 const XP_COL_THRESHOLD = 1400;
-const PROJ_COL_THRESHOLD = 1000;
+const PROJ_COL_THRESHOLD = 1100;
 
 const SoftwareDevPage = () => {
 
