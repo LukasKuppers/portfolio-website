@@ -152,7 +152,7 @@ p {
 }
 
 .contact-body h1 {
-  font-size: max(6vw, 50px);
+  font-size: min(10vw, 100px);
   margin-bottom: 0;
 }
 
@@ -185,7 +185,7 @@ p {
 }
 
 .home-intro-section h1 {
-  font-size: max(6vw, 50px);
+  font-size: min(10vw, 100px);
   text-align: start;
   margin-top: 0;
   margin-bottom: 0;
@@ -232,7 +232,7 @@ p {
 }
 
 .dev-body h1 {
-  font-size: max(6vw, 50px);
+  font-size: min(10vw, 100px);
   text-align: start;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -250,7 +250,7 @@ p {
 }
 
 .dev-xp-container h1 {
-  font-size: max(2vw, 25px);
+  font-size: 25px;
   margin-bottom: 0.5rem;
 }
 
@@ -290,7 +290,7 @@ p {
 }
 
 .project-card h1 {
-  font-size: max(2vw, 25px);
+  font-size: 25px;
 }
 
 .project-card span {
