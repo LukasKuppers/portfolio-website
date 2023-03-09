@@ -6,7 +6,6 @@ import ProjectCard from '../components/ProjectCard';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 
 const colors = require('../colors.json');
-const text = require('../textChunks.json');
 
 const EXPERIENCE_SHEET_ID = 'technical-experience';
 const PROJECTS_SHEET_ID = 'technical-projects';

@@ -22,7 +22,7 @@ const ProjectCard = ({ project, smallScreen }) => {
     };
 
     const getTextColor = () => {
-        return project.textShade == 0 ? colors.light : colors.dark;
+        return project.textShade === 0 ? colors.light : colors.dark;
     };
 
     return (

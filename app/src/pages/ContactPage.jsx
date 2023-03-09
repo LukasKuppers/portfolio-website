@@ -38,7 +38,7 @@ const ContactPage = () => {
                 </div>
                 <div className='contact-row'>
                     <FontAwesomeIcon icon={solid('envelope')} size='xl' className={colors.dark} />
-                    <a href='' className={colors.accent}>{email}</a>
+                    <a href='contact' className={colors.accent}>{email}</a>
                 </div>
             </div>
         </div>

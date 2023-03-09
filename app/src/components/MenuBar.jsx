@@ -11,7 +11,7 @@ const MenuBar = ({ fontColor, bgColor }) => {
     }, [navOpen]);
 
     return (
-        <div className={`menu-bar${bgColor && bgColor != '' ? ' ' + bgColor : ''}`}>
+        <div className={`menu-bar${bgColor && bgColor !== '' ? ' ' + bgColor : ''}`}>
             <div className="menu-content">
                 <a href="home" className="nav-link">
                     <h1 className={fontColor}>LUKAS_K.</h1>
