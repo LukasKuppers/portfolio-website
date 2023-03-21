@@ -27,7 +27,7 @@ const ArtPage = () => {
     return (
         <div className='page-art'>
             <MenuBar fontColor={colors.dark} bgColor={colors.bg_light} />
-            <SocialsMenu color={colors.dark} />
+            <SocialsMenu excludeExternalLinks={true} color={colors.dark} />
             <div className='art-body'>
                 <h1 className={colors.dark}>Art</h1>
             </div>
