@@ -1,6 +1,7 @@
 import HomePage from "./pages/HomePage";
 import SoftwareDevPage from "./pages/SoftwareDevPage";
 import ContactPage from "./pages/ContactPage";
+import ArtPage from "./pages/ArtPage";
 import UnderConstructionPage from "./pages/UnderConstructionPage";
 
 const pageRouteMap =  {
@@ -8,7 +9,7 @@ const pageRouteMap =  {
     "/home": <HomePage/>, 
     "/software-projects": <SoftwareDevPage />, 
     "/contact": <ContactPage />, 
-    "/art": <UnderConstructionPage />
+    "/art": <ArtPage />
 }
 
 export default pageRouteMap;

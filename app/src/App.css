@@ -166,6 +166,23 @@ p {
   font-family: 'JetBrains Mono';
 }
 
+.page-art {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+
+.art-body {
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  width: min(70vw, 1500px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .page-home {
   min-height: 100vh;
   display: flex;
