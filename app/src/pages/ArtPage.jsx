@@ -4,7 +4,6 @@ import SocialsMenu from '../components/SocailsMenu';
 import ArtImageContainer from '../components/ArtImageContainer';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 const colors = require('../colors.json');
-const text = require('../textChunks.json');
 
 const MISC_SPREADSHEET_ID = 'static-art-images';
 
