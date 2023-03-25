@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 const colors = require('../colors.json');
@@ -10,8 +10,12 @@ const ArtImageContainer = ({ imageData }) => {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     const customStyle = () => {
+        const imgUrl = imageLoaded ? 
+            imageData.link :
+            (imageData.thumbnailLink ? imageData.thumbnailLink : imageData.link);
+
         return {
-            backgroundImage: `url(${imageData.link})`, 
+            backgroundImage: `url(${imgUrl})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center', 
         };
@@ -55,10 +59,16 @@ const ArtImageContainer = ({ imageData }) => {
                 style={customStyle()}
                 onMouseEnter={() => setMouseHover(true)}
                 onMouseLeave={() => setMouseHover(false)}
+                onLoad={(e) => setImageLoaded(true)}
                 onClick={openModal}>
                 <FontAwesomeIcon icon={solid('up-right-and-down-left-from-center')} size='xl'
                     className={`art-expand-icon ${colors.accent} ${mouseHover ? '' : 'hidden'}`} />
             </div>
+
+            {/* check if image is loaded */}
+            <img src={imageData.link} className='disp-none' 
+                onLoad={(e) => setImageLoaded(true)}/>
+
             { modalOpen ? renderModal() : ''}
         </div>
     );
