@@ -41,7 +41,7 @@ const ArtImageContainer = ({ imageData }) => {
                 <div className='art-modal-header'>
                     <h1 className={colors.dark}>{imageData.name}</h1>
                 </div>
-                <img src={imageData.link} 
+                <img src={imageData.link} alt=''
                     className={`art-modal-image ${imageLoaded ? '' : 'disp-none'}`}
                     onLoad={(e) => setImageLoaded(true)}/>
                 { renderLoadingSpinner() }

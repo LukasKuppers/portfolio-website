@@ -196,7 +196,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 105%;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .art-image-container-outer {
@@ -209,7 +209,7 @@ p {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
 }
 
