@@ -24,6 +24,14 @@ const ArtImageContainer = ({ imageData }) => {
         }
     };
 
+    const renderLoadingSpinner = () => {
+        return (
+            <FontAwesomeIcon icon={solid('circle-notch')} size='2xl' 
+                className={`art-modal-loading-icon ${colors.dark} ${imageLoaded ? 'disp-none' : ''}`}
+                spin />
+        );
+    }
+
     const renderModal = () => {
         return (
             <div className='art-modal'>
@@ -36,16 +44,15 @@ const ArtImageContainer = ({ imageData }) => {
                 <img src={imageData.link} 
                     className={`art-modal-image ${imageLoaded ? '' : 'disp-none'}`}
                     onLoad={(e) => setImageLoaded(true)}/>
-                <FontAwesomeIcon icon={solid('circle-notch')} size='2xl' 
-                    className={`art-modal-loading-icon ${colors.dark} ${imageLoaded ? 'disp-none' : ''}`}
-                    spin />
+                { renderLoadingSpinner() }
             </div>
         );
     }
 
     return (
         <div className='art-image-container-outer'>
-            <div className='art-image-container' style={customStyle()}
+            <div className='art-image-container' 
+                style={customStyle()}
                 onMouseEnter={() => setMouseHover(true)}
                 onMouseLeave={() => setMouseHover(false)}
                 onClick={openModal}>
