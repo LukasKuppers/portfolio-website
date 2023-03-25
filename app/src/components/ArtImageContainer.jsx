@@ -6,6 +6,7 @@ const colors = require('../colors.json');
 const ArtImageContainer = ({ imageData }) => {
 
     const [mouseHover, setMouseHover] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
 
     const customStyle = () => {
         return {
@@ -15,12 +16,30 @@ const ArtImageContainer = ({ imageData }) => {
         };
     };
 
+    const renderModal = () => {
+        return (
+            <div className='art-modal'>
+                <FontAwesomeIcon icon={solid('xmark')} size='2xl' 
+                    className={`art-modal-exit-icon ${colors.dark}`} 
+                        onClick={() => setModalOpen(false)} />
+                <div className='art-modal-header'>
+                    <h1 className={colors.dark}>{imageData.name}</h1>
+                </div>
+                <img src={imageData.link} className='art-modal-image' />
+            </div>
+        );
+    }
+
     return (
-        <div className='art-image-container' style={customStyle()}
-            onMouseEnter={() => setMouseHover(true)}
-            onMouseLeave={() => setMouseHover(false)}>
-            <FontAwesomeIcon icon={solid('up-right-and-down-left-from-center')} size='xl'
-                className={`art-expand-icon ${colors.accent} ${mouseHover ? '' : 'hidden'}`} />
+        <div className='art-image-container-outer'>
+            <div className='art-image-container' style={customStyle()}
+                onMouseEnter={() => setMouseHover(true)}
+                onMouseLeave={() => setMouseHover(false)}
+                onClick={() => setModalOpen(true)}>
+                <FontAwesomeIcon icon={solid('up-right-and-down-left-from-center')} size='xl'
+                    className={`art-expand-icon ${colors.accent} ${mouseHover ? '' : 'hidden'}`} />
+            </div>
+            { modalOpen ? renderModal() : ''}
         </div>
     );
 };
