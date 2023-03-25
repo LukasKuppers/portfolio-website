@@ -6,6 +6,11 @@
   opacity: 0;
 }
 
+.disp-none {
+  display: none;
+  visibility: hidden;
+}
+
 .color-black-brown {
   color: #201E20;
 }
@@ -231,6 +236,10 @@ p {
   position: fixed;
   right: 2rem;
   top: 2rem;
+}
+
+.art-modal-loading-icon {
+  margin: 5rem;
 }
 
 .page-home {

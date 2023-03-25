@@ -7,6 +7,7 @@ const ArtImageContainer = ({ imageData }) => {
 
     const [mouseHover, setMouseHover] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     const customStyle = () => {
         return {
@@ -14,6 +15,13 @@ const ArtImageContainer = ({ imageData }) => {
             backgroundSize: 'cover', 
             backgroundPosition: 'center', 
         };
+    };
+
+    const openModal = () => {
+        if (!modalOpen) {
+            setImageLoaded(false);
+            setModalOpen(true);
+        }
     };
 
     const renderModal = () => {
@@ -25,7 +33,12 @@ const ArtImageContainer = ({ imageData }) => {
                 <div className='art-modal-header'>
                     <h1 className={colors.dark}>{imageData.name}</h1>
                 </div>
-                <img src={imageData.link} className='art-modal-image' />
+                <img src={imageData.link} 
+                    className={`art-modal-image ${imageLoaded ? '' : 'disp-none'}`}
+                    onLoad={(e) => setImageLoaded(true)}/>
+                <FontAwesomeIcon icon={solid('circle-notch')} size='2xl' 
+                    className={`art-modal-loading-icon ${colors.dark} ${imageLoaded ? 'disp-none' : ''}`}
+                    spin />
             </div>
         );
     }
@@ -35,7 +48,7 @@ const ArtImageContainer = ({ imageData }) => {
             <div className='art-image-container' style={customStyle()}
                 onMouseEnter={() => setMouseHover(true)}
                 onMouseLeave={() => setMouseHover(false)}
-                onClick={() => setModalOpen(true)}>
+                onClick={openModal}>
                 <FontAwesomeIcon icon={solid('up-right-and-down-left-from-center')} size='xl'
                     className={`art-expand-icon ${colors.accent} ${mouseHover ? '' : 'hidden'}`} />
             </div>
