@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 const colors = require('../colors.json');
@@ -66,7 +66,7 @@ const ArtImageContainer = ({ imageData }) => {
             </div>
 
             {/* check if image is loaded */}
-            <img src={imageData.link} className='disp-none' 
+            <img src={imageData.link} alt='' className='disp-none' 
                 onLoad={(e) => setImageLoaded(true)}/>
 
             { modalOpen ? renderModal() : ''}
