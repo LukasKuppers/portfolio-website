@@ -259,6 +259,10 @@ p {
   filter: drop-shadow(0 0.5rem 0.5rem grey)
 }
 
+.art-commission-modal-close-icon {
+  cursor: pointer;
+}
+
 .art-commission-modal span {
   font-family: 'Merriweather';
 }
