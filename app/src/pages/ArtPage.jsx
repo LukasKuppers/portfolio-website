@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
 import SocialsMenu from '../components/SocailsMenu';
 import ArtImageContainer from '../components/ArtImageContainer';
+import ArtCommissionModal from '../components/ArtCommissionModal';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 const colors = require('../colors.json');
 const text = require('../textChunks.json');
@@ -35,6 +36,7 @@ const ArtPage = () => {
         <div className='page-art'>
             <MenuBar fontColor={colors.dark} bgColor={colors.bg_light} />
             <SocialsMenu excludeExternalLinks={true} color={colors.dark} />
+            <ArtCommissionModal bgColor={colors.bg_dark} />
             <div className='art-body'>
                 <h1 className={colors.dark}>{text.artPageHeader}</h1>
                 <div className='art-images-container'>
