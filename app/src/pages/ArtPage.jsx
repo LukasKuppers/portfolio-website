@@ -34,9 +34,9 @@ const ArtPage = () => {
 
     return (
         <div className='page-art'>
+            <ArtCommissionModal bgColor={colors.bg_dark} />
             <MenuBar fontColor={colors.dark} bgColor={colors.bg_light} />
             <SocialsMenu excludeExternalLinks={true} color={colors.dark} />
-            <ArtCommissionModal bgColor={colors.bg_dark} />
             <div className='art-body'>
                 <h1 className={colors.dark}>{text.artPageHeader}</h1>
                 <div className='art-images-container'>
