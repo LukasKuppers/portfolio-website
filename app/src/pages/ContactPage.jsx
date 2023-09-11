@@ -40,6 +40,23 @@ const ContactPage = () => {
                     <FontAwesomeIcon icon={solid('envelope')} size='xl' className={colors.dark} />
                     <a href='contact' className={colors.accent}>{email}</a>
                 </div>
+                <br/>
+                <p className={colors.dark}>{text.contactBody2}</p>
+                <div className='contact-row'>
+                    <FontAwesomeIcon icon={brands('x-twitter')} size='xl' className={colors.dark} />
+                    <a href='https://twitter.com/luksups'
+                        className={colors.accent}>&gt; TWITTER</a>
+                </div>
+                <div className='contact-row'>
+                    <FontAwesomeIcon icon={brands('medium')} size='xl' className={colors.dark} />
+                    <a href='https://medium.com/@lkuppers11'
+                        className={colors.accent}>&gt; MEDIUM</a>
+                </div>
+                <div className='contact-row'>
+                    <FontAwesomeIcon icon={brands('stack-overflow')} size='xl' className={colors.dark} />
+                    <a href='https://stackoverflow.com/users/18508382/lukas-kuppers'
+                        className={colors.accent}>&gt; STACK OVERFLOW</a>
+                </div>
             </div>
         </div>
     );
