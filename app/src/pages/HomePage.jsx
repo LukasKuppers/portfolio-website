@@ -10,7 +10,7 @@ const HomePage = () => {
             <MenuBar fontColor={colors.light} bgColor={colors.bg_dark} />
             <SocialsMenu color={colors.light} />
             <div className='home-intro-section'>
-                <span className={colors.accent}>Hi, I'm</span>
+                <span className={colors.accent}>👋 Hi, I'm</span>
                 <h1 className={colors.light}>Lukas Kuppers</h1>
                 <p className={colors.medium}>{text.professionalIntro}</p>
                 <p className={colors.medium}>{text.personalIntro}</p>
