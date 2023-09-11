@@ -13,6 +13,26 @@ const SocialsMenu = ({ excludeExternalLinks, color }) => {
                 </a>
                 )
             }
+            
+            {
+                excludeExternalLinks ? '' :
+                (
+                <a href='https://twitter.com/luksups'>
+                    <FontAwesomeIcon icon={brands("x-twitter")} size='2xl' 
+                        className={`socials-icon ${color}`} />
+                </a>
+                )
+            }
+            
+            {
+                excludeExternalLinks ? '' :
+                (
+                <a href='https://medium.com/@lkuppers11'>
+                    <FontAwesomeIcon icon={brands("medium")} size='2xl' 
+                        className={`socials-icon ${color}`} />
+                </a>
+                )
+            }
 
             {
                 excludeExternalLinks ? '' :
