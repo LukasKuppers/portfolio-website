@@ -292,6 +292,27 @@ p {
   background-color: #201E20;
 }
 
+.home-header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-header-img {
+  max-width: 50%;
+  aspect-ratio: 1/1;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.home-header-img img {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.home-header-text {
+  text-align: start;
+}
+
 .home-intro-section {
   display: flex;
   margin-top: 30vh;
