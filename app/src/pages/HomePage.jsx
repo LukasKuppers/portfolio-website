@@ -11,11 +11,18 @@ const HomePage = () => {
     const textContainerRef = useRef(null);
 
     useEffect(() => {
-        // get height of header text container:
-        const textContainerHeight = textContainerRef.current.clientHeight;
+        const resizeProfileImage = () => {
+            const textContainerHeight = textContainerRef.current.clientHeight;
+            // Set headshot height to match text containers height:
+            imageRef.current.style.height = `${textContainerHeight}px`;
+        };
 
-        // Set headshot height to match text containers height:
-        imageRef.current.style.height = `${textContainerHeight}px`;
+        resizeProfileImage();
+
+        window.addEventListener('resize', resizeProfileImage);
+
+        // cleanup
+        return () => window.removeEventListener('resize', resizeProfileImage);
     }, []);
 
     return (

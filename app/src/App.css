@@ -311,6 +311,7 @@ p {
 
 .home-header-text {
   text-align: start;
+  height: min-content;
 }
 
 .home-intro-section {
