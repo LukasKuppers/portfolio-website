@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
 import SocialsMenu from '../components/SocailsMenu';
 import ArtImageContainer from '../components/ArtImageContainer';
-import ArtCommissionModal from '../components/ArtCommissionModal';
+// import ArtCommissionModal from '../components/ArtCommissionModal';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 const colors = require('../colors.json');
 const text = require('../textChunks.json');
@@ -34,7 +34,7 @@ const ArtPage = () => {
 
     return (
         <div className='page-art'>
-            <ArtCommissionModal bgColor={colors.bg_dark} />
+            {/* <ArtCommissionModal bgColor={colors.bg_dark} /> */}
             <MenuBar fontColor={colors.dark} bgColor={colors.bg_light} />
             <SocialsMenu excludeExternalLinks={true} color={colors.dark} />
             <div className='art-body'>
