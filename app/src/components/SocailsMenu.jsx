@@ -14,7 +14,7 @@ const SocialsMenu = ({ excludeExternalLinks, color }) => {
                 )
             }
             
-            {
+            {/*
                 excludeExternalLinks ? '' :
                 (
                 <a href='https://twitter.com/luksups'>
@@ -22,7 +22,7 @@ const SocialsMenu = ({ excludeExternalLinks, color }) => {
                         className={`socials-icon ${color}`} />
                 </a>
                 )
-            }
+            */}
             
             {
                 excludeExternalLinks ? '' :
