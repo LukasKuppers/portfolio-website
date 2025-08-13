@@ -42,11 +42,11 @@ const ContactPage = () => {
                 </div>
                 <br/>
                 <p className={colors.dark}>{text.contactBody2}</p>
-                <div className='contact-row'>
+                {/*<div className='contact-row'>
                     <FontAwesomeIcon icon={brands('x-twitter')} size='xl' className={colors.dark} />
                     <a href='https://twitter.com/luksups'
                         className={colors.accent}>&gt; TWITTER</a>
-                </div>
+                </div>*/}
                 <div className='contact-row'>
                     <FontAwesomeIcon icon={brands('medium')} size='xl' className={colors.dark} />
                     <a href='https://medium.com/@lkuppers11'
