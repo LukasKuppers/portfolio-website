@@ -40,6 +40,13 @@ const ArtPage = () => {
         setIsModalOpen(true);
     };
 
+    const mod = (n, m) => (n % m + m) % m;
+
+    const incrementImageIndex = (increment) => {
+        const newIndex = mod(selectedImageIndex + increment, images.length);
+        setSelectedImageIndex(newIndex);
+    }
+
     return (
         <div className='page-art'>
             {/* <ArtCommissionModal bgColor={colors.bg_dark} /> */}
@@ -53,7 +60,9 @@ const ArtPage = () => {
                                                                    onClick={() => onClickImage(index)} />)}
                 {isModalOpen ? 
                     <ArtImageModal imageData={images[selectedImageIndex]}
-                                              onClickExit={() => setIsModalOpen(false)}/>
+                                   onClickExit={() => setIsModalOpen(false)}
+                                   onClickLeft={() => incrementImageIndex(-1)}
+                                   onClickRight={() => incrementImageIndex(1)}/>
                     : ''}
                 </div>
             </div>

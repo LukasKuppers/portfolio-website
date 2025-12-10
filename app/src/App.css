@@ -243,6 +243,18 @@ p {
   top: 2rem;
 }
 
+.art-modal-left-icon {
+  cursor: pointer;
+  position: fixed;
+  left: 1rem;
+}
+
+.art-modal-right-icon {
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+}
+
 .art-modal-loading-icon {
   margin: 5rem;
 }

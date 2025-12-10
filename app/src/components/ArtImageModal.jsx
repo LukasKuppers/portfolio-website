@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 const colors = require('../colors.json');
 
-const ArtImageModal = ({ imageData, onClickExit }) => {
+const ArtImageModal = ({ imageData, onClickExit, onClickLeft, onClickRight }) => {
 
     const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -20,6 +20,12 @@ const ArtImageModal = ({ imageData, onClickExit }) => {
             <FontAwesomeIcon icon={solid('xmark')} size='2xl' 
                 className={`art-modal-exit-icon ${colors.dark}`} 
                     onClick={onClickExit}/>
+            <FontAwesomeIcon icon={solid('angle-left')} size='2xl'
+                className={`art-modal-left-icon ${colors.dark}`}
+                onClick={onClickLeft}/>
+            <FontAwesomeIcon icon={solid('angle-right')} size='2xl'
+                className={`art-modal-right-icon ${colors.dark}`}
+                onClick={onClickRight}/>
             <div className='art-modal-header'>
                 <h1 className={colors.dark}>{imageData.name}</h1>
             </div>
