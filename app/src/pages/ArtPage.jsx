@@ -51,8 +51,10 @@ const ArtPage = () => {
                 {images.map((imgData, index) => <ArtImageContainer key={imgData.name}
                                                                    imageData={imgData}
                                                                    onClick={() => onClickImage(index)} />)}
-                {isModalOpen ? <ArtImageModal imageData={images[selectedImageIndex]}
-                                              onClickExit={() => setIsModalOpen(false)}/> : ''}
+                {isModalOpen ? 
+                    <ArtImageModal imageData={images[selectedImageIndex]}
+                                              onClickExit={() => setIsModalOpen(false)}/>
+                    : ''}
                 </div>
             </div>
         </div>
