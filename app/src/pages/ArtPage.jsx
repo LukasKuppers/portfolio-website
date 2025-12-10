@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
 import SocialsMenu from '../components/SocailsMenu';
 import ArtImageContainer from '../components/ArtImageContainer';
+import ArtImageModal from '../components/ArtImageModal';
 // import ArtCommissionModal from '../components/ArtCommissionModal';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
 const colors = require('../colors.json');
@@ -12,6 +13,8 @@ const MISC_SPREADSHEET_ID = 'static-art-images';
 const ArtPage = () => {
 
     const [images, setImages] = useState([]);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -32,6 +35,11 @@ const ArtPage = () => {
         fetchData();
     }, []);
 
+    const onClickImage = (imageIndex) => {
+        setSelectedImageIndex(imageIndex);
+        setIsModalOpen(true);
+    };
+
     return (
         <div className='page-art'>
             {/* <ArtCommissionModal bgColor={colors.bg_dark} /> */}
@@ -40,7 +48,11 @@ const ArtPage = () => {
             <div className='art-body'>
                 <h1 className={colors.dark}>{text.artPageHeader}</h1>
                 <div className='art-images-container'>
-                {images.map(imgData => <ArtImageContainer key={imgData.name} imageData={imgData} />)}
+                {images.map((imgData, index) => <ArtImageContainer key={imgData.name}
+                                                                   imageData={imgData}
+                                                                   onClick={() => onClickImage(index)} />)}
+                {isModalOpen ? <ArtImageModal imageData={images[selectedImageIndex]}
+                                              onClickExit={() => setIsModalOpen(false)}/> : ''}
                 </div>
             </div>
         </div>
