@@ -228,6 +228,7 @@ p {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(50px);
+  z-index: 3;
 }
 
 .art-modal-image {
@@ -460,6 +461,7 @@ p {
   width: 100vw;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .menu-bar h1 {
