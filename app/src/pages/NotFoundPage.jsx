@@ -1,5 +1,5 @@
 import MenuBar from "../components/MenuBar";
-import SocialsMenu from "../components/SocailsMenu";
+import SocialsMenu from "../components/SocialsMenu";
 const colors = require('../colors.json');
 
 const NotFoundPage = () => {

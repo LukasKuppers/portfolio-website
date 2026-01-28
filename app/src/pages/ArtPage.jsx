@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
-import SocialsMenu from '../components/SocailsMenu';
+import SocialsMenu from '../components/SocialsMenu';
 import ArtImageContainer from '../components/ArtImageContainer';
 import ArtImageModal from '../components/ArtImageModal';
 // import ArtCommissionModal from '../components/ArtCommissionModal';

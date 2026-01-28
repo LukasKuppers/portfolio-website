@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import MenuBar from '../components/MenuBar';
-import SocialsMenu from '../components/SocailsMenu';
+import SocialsMenu from '../components/SocialsMenu';
 import headshot from '../headshot.png';
 const colors = require('../colors.json');
 const text = require('../textChunks.json');

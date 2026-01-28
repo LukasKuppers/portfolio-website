@@ -1,5 +1,5 @@
 import MenuBar from "../components/MenuBar";
-import SocialsMenu from "../components/SocailsMenu";
+import SocialsMenu from "../components/SocialsMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid  } from "@fortawesome/fontawesome-svg-core/import.macro";
 const colors = require('../colors.json');

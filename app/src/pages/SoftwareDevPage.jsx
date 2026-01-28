@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MenuBar from '../components/MenuBar';
-import SocialsMenu from '../components/SocailsMenu';
+import SocialsMenu from '../components/SocialsMenu';
 import DevXpContainer from '../components/DevXpContainer';
 import ProjectCard from '../components/ProjectCard';
 import getSpreadsheetDataAsJson from '../util/GoogleSheets';
